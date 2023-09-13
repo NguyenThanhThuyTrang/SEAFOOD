@@ -1,0 +1,151 @@
+/* Định dạng header */
+body,html{
+    margin: 0;
+    padding: 0;
+}
+.header1{
+    width: 100%;
+    height: auto;
+    background-color: #1B2534;
+
+}
+header {
+    width: 100%;
+    background-color: #0b3349;
+    color: #fff;
+    text-align: center;
+    padding:20px;
+    position: fixed;
+}
+/* Định dạng top-bar và search-bar */
+nav, .search-bar {
+    display: inline; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10px;
+}
+.search-bar input[type="text"] {
+    padding: 5px;
+    width: 30%;
+}
+.search-bar button {
+    background-color: rgba(255, 0, 0, 0);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+/* Định dạng menu trong header */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Định dạng menu */
+#menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.menu-item {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    background-color: #f9f9f9;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+}
+/* định dạng thực đơn */
+.thucdon{
+    color: #0b3349;
+    font-size: 40px;
+    text-align-last: center;
+    font-family: 'Helvetica Neue Thin', sans-serif;
+}
+.slogant{
+    color: #0b3349;
+    font-weight: 1;
+    text-align: center;
+  
+}
+#search-bar-button1{
+    color: #0b3349;
+    background-color: rgba(255, 0, 0, 0) ;
+    border: none;
+}
+.search-bar1 input[type="text"] {
+    padding: 5px;
+    width: 30%;
+}
+.search-bar {
+    text-align: center;
+    margin: 20px auto; /* Để căn giữa theo chiều ngang */
+    width: 50%; /* Độ rộng của thanh tìm kiếm */
+}
+/* Định dạng giá và nút "Thêm vào giỏ hàng" */
+.price {
+    font-weight: bold;
+}
+.add-to-cart {
+    font-size: 24px;
+    background-color: rgba(255, 0, 0, 0);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Định dạng footer */
+footer {
+    background-color: #0b3349;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    height: 100px;
+}
+/* CSS cho cột */
+.column {
+    float: left;
+    width: 33.33%; /* Chia footer thành 3 cột bằng cách đặt width là 33.33% */
+    padding: 10px;
+    box-sizing: border-box;
+}
+nav ul li {
+    display: inline;
+    color: #fff;
+}
+.menu-item{
+    background-color: white;
+    border: solid #1B2534;
+}
+.food{
+    width: 100%; /* Để ảnh tự động điều chỉnh kích thước để vừa khung chứa */
+    height: auto; /* Để ảnh tự động điều chỉnh tỷ lệ khung chứa */
+    display: block; /* Loại bỏ khoảng trắng dưới ảnh */
+}
+.but{
+    position: absolute;
+    right: 250px;
+    background-color: #0b3349;
+    color: #f9f9f9;
+}
+
+
