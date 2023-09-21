@@ -13,7 +13,7 @@ header {
     width: 100%;
     background-color: #0b3349;
     color: #fff;
-    text-align: center;
+    /* text-align: center; */
     padding:20px;
     position: fixed;
 }
@@ -24,7 +24,7 @@ nav, .search-bar {
     align-items: center;
     margin-bottom:10px;
 }
-.search-bar input[type="text"] {
+.search-bar input {
     padding: 5px;
     width: 30%;
 }
@@ -91,7 +91,7 @@ nav ul li a {
     background-color: rgba(255, 0, 0, 0) ;
     border: none;
 }
-.search-bar1 input[type="text"] {
+.search-bar1 input {
     padding: 5px;
     width: 30%;
 }
@@ -129,10 +129,6 @@ footer {
     box-sizing: border-box;
     text-align: left;
 }
-nav ul li {
-    display: inline;
-    color: #fff;
-}
 .menu-item{
     background-color: white;
     border: solid #1B2534;
@@ -148,3 +144,26 @@ nav ul li {
     background-color: #0b3349;
     color: #f9f9f9;
 }
+.footer{
+    background-color: #1b2534;
+    color: white;
+    padding-top: 10px;
+   }
+   .content{
+    margin: auto;
+    
+   }
+   .row{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .justify-content{
+    justify-content:space-around;
+   }
+   .footer-item a{
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+   }
+
+

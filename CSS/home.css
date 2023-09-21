@@ -1,0 +1,68 @@
+.head {
+    height: 30px;
+    width: auto;
+    background-color: #1b2534;
+    color: white;
+    font-family: Light;
+  }
+  
+  .phone{
+    margin: 30px;
+  }
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+    background-color: #1b2534;
+    position: fixed;
+    color: white;
+  }
+  .up ul{
+    list-style: none;
+    color: white;
+    margin-left: 10%;
+  }
+  .up ul li{
+    display: inline-block;
+    padding: 8px;
+  }
+  .up ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  #search-box #search-text{
+    border: none;
+    outline: none;
+    background: none;
+  }
+  #search-box #search-btn{
+    background: none;
+    color: white;
+    border: none;
+  }
+   .footer{
+    background-color: #1b2534;
+    color: white;
+    padding-top: 10px;
+   }
+   .content{
+    margin: auto;
+    
+   }
+   .row{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .justify-content{
+    justify-content:space-around;
+   }
+   .footer-item a{
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+   }
+
