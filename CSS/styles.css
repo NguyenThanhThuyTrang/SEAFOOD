@@ -124,9 +124,10 @@ footer {
 /* CSS cho cột */
 .column {
     float: left;
-    width: 33.33%; /* Chia footer thành 3 cột bằng cách đặt width là 33.33% */
+    width: 33%; /* Chia footer thành 3 cột bằng cách đặt width là 33.33% */
     padding: 10px;
     box-sizing: border-box;
+    text-align: left;
 }
 nav ul li {
     display: inline;
@@ -147,5 +148,3 @@ nav ul li {
     background-color: #0b3349;
     color: #f9f9f9;
 }
-
-
