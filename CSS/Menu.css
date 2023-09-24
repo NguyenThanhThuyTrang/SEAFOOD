@@ -1,169 +1,132 @@
-/* Định dạng header */
-body,html{
-    margin: 0;
+body, html{
     padding: 0;
-}
-.header1{
-    width: 100%;
-    height: auto;
-    background-color: #1B2534;
-
-}
-header {
+    margin: 0;
+} 
+.header {
     width: 100%;
     background-color: #1B2534;
     color: #fff;
-    /* text-align: center; */
     padding:20px;
     position: fixed;
+    text-align: center;
 }
-/* Định dạng top-bar và search-bar */
-nav, .search-bar {
-    display: inline; 
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom:10px;
-}
-.search-bar input {
-    padding: 5px;
-    width: 30%;
-}
-.search-bar button {
+#search-bar{
     background-color: rgba(255, 0, 0, 0);
-    color: #fff;
+    color: #a29c9c;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
 }
-/* Định dạng menu trong header */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Định dạng menu */
-#menu {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-.menu-item {
-    text-align: center;
-    border: 1px solid #ccc;
+.opt{
+    float: left;
+    display: block;
+    width: 100px;
+    height: 30px;
     padding: 10px;
-    width: 200px;
-    background-color: #f9f9f9;
+    margin: 0 auto;
+    text-transform: uppercase;
+    overflow: visible;
 }
 
-.menu-item img {
-    max-width: 100%;
-    height: auto;
+a{
+    color: #fff;
+    text-decoration: none; /*bỏ dấu gạch chân của link*/
 }
-/* định dạng thực đơn */
+
+.logo {
+    width: 80px;
+    height: 50px;
+    
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
 .thucdon{
     color: #0b3349;
     font-size: 40px;
-    text-align-last: center;
-    font-family: 'Helvetica Neue Thin', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
 }
+
 .slogant{
     color: #0b3349;
     font-weight: 1;
     text-align: center;
   
 }
-#search-bar-button1{
-    color: #0b3349;
-    background-color: rgba(255, 0, 0, 0) ;
-    border: none;
-}
-.search-bar1 input {
-    padding: 5px;
-    width: 30%;
-}
-.search-bar {
-    text-align: center;
-    margin: 20px auto; /* Để căn giữa theo chiều ngang */
-    width: 50%; /* Độ rộng của thanh tìm kiếm */
-}
-/* Định dạng giá và nút "Thêm vào giỏ hàng" */
-.price {
-    font-weight: bold;
-}
-.add-to-cart {
-    font-size: 24px;
-    background-color: rgba(255, 0, 0, 0);
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
+
+.but{
+    text-align: right;
+    color: #f9f9f9;
+    width: 80%;
 }
 
-/* Định dạng footer */
-footer {
-    background-color: #0b3349;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    height: 100px;
+.menu{
+    width: 100%;
+    height: auto;
 }
-/* CSS cho cột */
-.column {
-    float: left;
-    width: 33%; /* Chia footer thành 3 cột bằng cách đặt width là 33.33% */
-    padding: 10px;
+.tr{
+    width: 70%;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.menu_items{
+    width: 23%;
+    height: 100%;
+    border: 3px solid #1b2534;
+    border-radius: 10px;
+    display: inline-block;
+    box-sizing: border-box; /* Đảm bảo border và padding không tác động vào kích thước tổng thể */
+    margin: 0;
+    overflow: hidden; /*phần tử ở trong phần tử cha là menuitems nêu bị đẩy ra ngoài thì tự động ẩn không hiển thị*/
+}
+.img{
+    width: 100%;
+    height: 60%;
     box-sizing: border-box;
+}
+.describe{
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+    border-top: 3px solid #1b2534;
+}
+.menu_items img{
+    width: 95%;
+    height: 95%;
+    padding: 5px;
+}
+.td{
+    padding-left: 10px;
+    font-size: 15px;
     text-align: left;
 }
-.menu-item{
-    background-color: white;
-    border: solid #1B2534;
-}
-.food{
-    width: 100%; /* Để ảnh tự động điều chỉnh kích thước để vừa khung chứa */
-    height: auto; /* Để ảnh tự động điều chỉnh tỷ lệ khung chứa */
-    display: block; /* Loại bỏ khoảng trắng dưới ảnh */
-}
-.but{
-    position: absolute;
-    right: 250px;
-    background-color: #0b3349;
-    color: #f9f9f9;
-}
+
 .footer{
     background-color: #1b2534;
     color: white;
     padding-top: 10px;
-   }
-   .content{
-    margin: auto;
-    
-   }
-   .row{
-    display: flex;
-    flex-wrap: wrap;
-   }
-   .justify-content{
-    justify-content:space-around;
-   }
-   .footer-item a{
-    color: white;
-    font-style: italic;
-    text-decoration: none;
-   }
+}
+.content{
+margin: auto;
 
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
 
+.justify-content{
+justify-content:space-around;
+}
+
+.footer-item a{
+color: white;
+font-style: italic;
+text-decoration: none;
+}

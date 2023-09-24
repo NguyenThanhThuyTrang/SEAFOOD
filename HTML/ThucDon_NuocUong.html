@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/Menu.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
     <title>ThucDonNuocUong</title>
     <link
     rel="stylesheet"
@@ -13,26 +13,22 @@
   />
 </head>
 <body>
-    <header>
-        <div class="header1"></div>
-        <nav>
-            <ul>
-                <li><img src="../IMAGE/logoremove.png" alt="" style="height: 60px; width:100px;"></li>
-                <li>
-                    <div class="search-bar">
-                        <input type="text" placeholder="Tìm kiếm...">
-                        <button id="search-bar button"><i class="fa fa-search"></i></button>
-                    </div>
-                </li>
-                <li><a href="../HTML/trangchu.html">HOME | </a></li>
-                <li><a href="#">GIỚI THIỆU | </a></li>
-                <li><a href="#">THỰC ĐƠN</a></li>   
-                <li><a href=""><span class="button-icon"><i class="fa fa-cart-plus"></i></span></a></li>
-            </ul> 
-        </nav>
-    </header>
+    <div class="header">
+        <li class="opt"><div class="logo"><img src="../IMAGE/logoremove.png"></div></li>
+        <li class="opt">
+            <input type="text" placeholder="Tìm kiếm..." style="width: 180px;">
+        </li>
+        <li class="opt">
+            <button id="search-bar"><i class="fa fa-search"></i></button>
+        </li>
+        <li class="opt"><a href="../HTML/trangchu.html">HOME  </a></li>
+        <li class="opt"><a href="#">GIỚI THIỆU  </a></li>
+        <li class="opt"><a href="#">THỰC ĐƠN</a></li>   
+        <li class="opt"><a href=""><span class="button-icon" ><i class="fa fa-cart-plus"></i></span></a></li>
+    </div>
     <img src="../IMAGE/anhmenu.jpg" alt="" style="width: 100%;">
-    <main>
+    <br>
+    <div class="main">
         <h2 class="thucdon"><b>THỰC ĐƠN</b></h2>
         <h3 class="slogant">
             <i>“Sự kết hợp tinh tế giữa nguyên liệu tươi ngon và nghệ thuật nấu ăn”</i> 
@@ -43,68 +39,133 @@
             <button id="search-bar-button1"><i class="fa fa-search"></i></button>
             <button id="search-bar-button1"><i class="fa fa-filter"></i></button>
         </div>
+
         <br>
-        <button class="but">Nước uống</button>
         <br>
-        <ul id="menu">
-            <li class="menu-item">
-                <img src="../IMAGE/NuocUong/bia.webp" alt="Lobster" class="food">
-                <h3>Bia</h3>
-                <p class="price">30.000VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon"><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-            <li class="menu-item">
-                <img src="../IMAGE/NuocUong/biaSG.jpg" alt="Lobster"class="food">
-                <h3>Bia Sài Gòn</h3>
-                <p class="price">30.000VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon" ><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-            <li class="menu-item">
-                <img src="../IMAGE/NuocUong/CaRot.jpg" alt="Salmon" class="food">
-                <h3>Cà Rốt ép</h3>
-                <p class="price">20.000VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon" ><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-        </ul>
-        <ul id="menu">
-            <li class="menu-item">
-                <img src="../IMAGE/NuocUong/Dua.jpg" alt="Lobster" class="food">
-                <h3>Dứa ép</h3>
-                <p class="price">30.000VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon"><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-            <li class="menu-item">
-                <img src="../IMAGE/NuocUong/Larue.jpg" alt="Shrimp" class="food">
-                <h3>Larue</h3>
-                <p class="price">30.000 VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon" ><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-            <li class="menu-item">
-                <img src="../IMAGE/NuocUong/NuocCam.jpg" alt="Salmon" class="food">
-                <h3>Nuoc Cam</h3>
-                <p class="price">20.000 VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon"><i class="fa fa-cart-plus" style="color: black"></i></span></a></button>
-            </li>
-        </ul>
-        <ul id="menu">
-            <li class="menu-item">
-                <img src="../IMAGE/NuocUong/OiEp.jpg" alt="Lobster" class="food">
-                <h3>Ổi ép</h3>
-                <p class="price">25.000 VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon" style="color: black;"><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-            <li class="menu-item">
-                <img src="../IMAGE/NuocUong/Strongbow.jpg" alt="Shrimp" class="food">
-                <h3>Strongbow</h3>
-                <p class="price">40.000 VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon" style="color: black"><i class="fa fa-cart-plus" style="color: black;" ></i></span></a></button>
-            </li>
-        </ul>
+        <div class="but"><button style="float: right;background-color: #1b2534; color: white;">Nước uống</button></div>
         <br>
-    <button class="but">tiếp theo</button>
+        <br>
+
+        <div class="menu">
+            <div class="tr">
+                <!-- width 33.3% height=300px -->
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/NuocUong/NuocCam.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Nước cam</b></span> <br>
+                        <span class="td"><b>Giá: 80.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/NuocUong/bia.webp" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Bia tiger</b></span> <br>
+                        <span class="td"><b>Giá: 70.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/NuocUong/CaRot.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Cà rốt ép</b></span> <br>
+                        <span class="td"><b>Giá: 6.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/NuocUong/biaSG.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Bia sài gon</b></span> <br>
+                        <span class="td"><b>Giá: 70.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="tr">
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/NuocUong/Dua.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Nước Dứa</b></span> <br>
+                        <span class="td"><b>Giá: 65.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/NuocUong/images.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>7 up</b></span> <br>
+                        <span class="td"><b>Giá: 40.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/NuocUong/Larue.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Larue</b></span> <br>
+                        <span class="td"><b>Giá: 60.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/NuocUong/NuocCam.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>nước cam</b></span> <br>
+                        <span class="td"><b>Giá: 50.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="tr">
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/NuocUong/OiEp.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Ổi ép Hồng Lam I7.03</b></span> <br>
+                        <span class="td"><b>Giá: 80.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/NuocUong/Strongbow.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Strongbow Bích Thùy</b></span> <br>
+                        <span class="td"><b>Giá: 90.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <br>
-    </main>
-    <section class="footer">
+    <br>
+    <div class="but"><button style="float: right; background-color: #1b2534; color: white;">Tiếp theo</button></div>
+    <br>
+    <br>
+
+    <div class="footer">
         <div class="content">
           <div class="row justify-content">
             <div class="footer-item">
@@ -137,6 +198,6 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 </body>
 </html>

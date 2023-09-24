@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/Menu.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
     <title>ThucDonMonNuong</title>
     <link
     rel="stylesheet"
@@ -13,26 +13,22 @@
   />
 </head>
 <body>
-    <header>
-        <div class="header1"></div>
-        <nav>
-            <ul>
-                <li><img src="../IMAGE/logoremove.png" alt="" style="height: 60px; width:100px;"></li>
-                <li>
-                    <div class="search-bar">
-                        <input type="text" placeholder="Tìm kiếm...">
-                        <button id="search-bar button"><i class="fa fa-search"></i></button>
-                    </div>
-                </li>
-                <li><a href="#">HOME | </a></li>
-                <li><a href="#">GIỚI THIỆU | </a></li>
-                <li><a href="#">THỰC ĐƠN</a></li>   
-                <li><a href=""><span class="button-icon"><i class="fa fa-cart-plus"></i></span></a></li>
-            </ul> 
-        </nav>
-    </header>
+    <div class="header">
+        <li class="opt"><div class="logo"><img src="../IMAGE/logoremove.png"></div></li>
+        <li class="opt">
+            <input type="text" placeholder="Tìm kiếm..." style="width: 180px;">
+        </li>
+        <li class="opt">
+            <button id="search-bar"><i class="fa fa-search"></i></button>
+        </li>
+        <li class="opt"><a href="../HTML/trangchu.html">HOME  </a></li>
+        <li class="opt"><a href="#">GIỚI THIỆU  </a></li>
+        <li class="opt"><a href="#">THỰC ĐƠN</a></li>   
+        <li class="opt"><a href=""><span class="button-icon" ><i class="fa fa-cart-plus"></i></span></a></li>
+    </div>
     <img src="../IMAGE/anhmenu.jpg" alt="" style="width: 100%;">
-    <main>
+    <br>
+    <div class="main">
         <h2 class="thucdon"><b>THỰC ĐƠN</b></h2>
         <h3 class="slogant">
             <i>“Sự kết hợp tinh tế giữa nguyên liệu tươi ngon và nghệ thuật nấu ăn”</i> 
@@ -43,74 +39,153 @@
             <button id="search-bar-button1"><i class="fa fa-search"></i></button>
             <button id="search-bar-button1"><i class="fa fa-filter"></i></button>
         </div>
+
         <br>
-        <button class="but">món nướng</button>
         <br>
-        <ul id="menu">
-            <li class="menu-item">
-                <img src="../IMAGE/ảnh món nướng/CaLocNuongMuoiOt.jpg" alt="Lobster" class="food">
-                <h3>Cá lóc nướng muối ớt</h3>
-                <p class="price">150.000VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon"><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-            <li class="menu-item">
-                <img src="../IMAGE/ảnh món nướng/CaNuong.png" alt="Lobster"class="food">
-                <h3>Cá nướng</h3>
-                <p class="price">200.000VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon" ><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-            <li class="menu-item">
-                <img src="../IMAGE/ảnh món nướng/CaPopNuongMatOng.jpg" alt="Salmon" class="food">
-                <h3>Cá bốp nướng mật ong</h3>
-                <p class="price">120.000VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon" ><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-        </ul>
-        <ul id="menu">
-            <li class="menu-item">
-                <img src="../IMAGE/ảnh món nướng/CaTrichNuongMuoiChanh.jpg" alt="Lobster" class="food">
-                <h3>Cá Trích nướng muối tiêu chanh</h3>
-                <p class="price">250.000VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon"><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-            <li class="menu-item">
-                <img src="../IMAGE/ảnh món nướng/ChaOcNuongGiayBac.jpg" alt="Shrimp" class="food">
-                <h3>Chả ốc nướng giấy bạc</h3>
-                <p class="price">190.000 VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon" ><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-            <li class="menu-item">
-                <img src="../IMAGE/ảnh món nướng/HauNuong.jpg" alt="Salmon" class="food">
-                <h3>Hàu nướng</h3>
-                <p class="price">240.000 VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon"><i class="fa fa-cart-plus" style="color: black"></i></span></a></button>
-            </li>
-        </ul>
-        <ul id="menu">
-            <li class="menu-item">
-                <img src="../IMAGE/ảnh món nướng/HauNuongPhoMai.jpg" alt="Lobster" class="food">
-                <h3>Hải sản nướng phô mai</h3>
-                <p class="price">290.000 VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon" style="color: black;"><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-            <li class="menu-item">
-                <img src="../IMAGE/ảnh món nướng/MucNuong.png" alt="Shrimp" class="food">
-                <h3>Mực Nướng</h3>
-                <p class="price">190.000 VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon" style="color: black"><i class="fa fa-cart-plus" style="color: black;" ></i></span></a></button>
-            </li>
-            <li class="menu-item">
-                <img src="../IMAGE/ảnh món nướng/MucNuongSaTe.jpg" alt="Salmon" class="food">
-                <h3>Mực nướng sa tế</h3>
-                <p class="price">240.000VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon" style="color: black"><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-        </ul>
+        <div class="but"><button style="float: right;background-color: #1b2534; color: white;">Món nướng</button></div>
         <br>
-    <a href="../HTML/ThucDon_NuocUong.html"><button class="but">tiếp theo</button></a>
+        <br>
+
+        <div class="menu">
+            <div class="tr">
+                <!-- width 33.3% height=300px -->
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/ảnh món nướng/CaLocNuongMuoiOt.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Cá lóc nướng muối ớt</b></span> <br>
+                        <span class="td"><b>Giá: 200.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/ảnh món nướng/CaNuong.png" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Cá nướng</b></span> <br>
+                        <span class="td"><b>Giá: 300.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/ảnh món nướng/CaPopNuongMatOng.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Cá pốp nướng mật ong</b></span> <br>
+                        <span class="td"><b>Giá: 250.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/ảnh món nướng/CaTrichNuongMuoiChanh.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Cá trích nướng muối tiêu chanh</b></span> <br>
+                        <span class="td"><b>Giá: 200.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="tr">
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/ảnh món nướng/ChaOcNuongGiayBac.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Chả ốc nướng giấy bạc</b></span> <br>
+                        <span class="td"><b>Giá: 350.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/ảnh món nướng/HauNuong.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Hàu nướng</b></span> <br>
+                        <span class="td"><b>Giá: 450.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/ảnh món nướng/HauNuongPhoMai.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Hàu nướng phô mai</b></span> <br>
+                        <span class="td"><b>Giá: 700.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/ảnh món nướng/MucNuong.png" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Mực nướng</b></span> <br>
+                        <span class="td"><b>Giá: 700.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="tr">
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/ảnh món nướng/MucNuongMuoiMe.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>mực nướng muối mè</b></span> <br>
+                        <span class="td"><b>Giá: 200.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/ảnh món nướng/MucNuongSaTe.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Mực nướng sa tế</b></span> <br>
+                        <span class="td"><b>Giá: 450.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/ảnh món nướng/MucTrungNuong.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Mực trứng nướng</b></span> <br>
+                        <span class="td"><b>Giá: 450.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/ảnh món nướng/OcBuuNuongTieuXanh.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Ốc bưu nướng tiêu xanh</b></span> <br>
+                        <span class="td"><b>Giá: 400.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <br>
-    </main>
-    <section class="footer">
+    <br>
+    <div class="but"><button style="float: right; background-color: #1b2534;"><a href="../HTML/ThucDon_NuocUong.html"> Tiếp theo</a></button></div>
+    <br>
+    <br>
+
+    <div class="footer">
         <div class="content">
           <div class="row justify-content">
             <div class="footer-item">
@@ -143,6 +218,6 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 </body>
 </html>

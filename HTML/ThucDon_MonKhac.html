@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/Menu.css">
-    <title>ThucDon_MonKhac</title>
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <title>ThucDonNuocUong</title>
     <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -13,26 +13,22 @@
   />
 </head>
 <body>
-    <header>
-        <div class="header1"></div>
-        <nav>
-            <ul>
-                <li><img src="../IMAGE/logoremove.png" alt="" style="height: 60px; width:100px;"></li>
-                <li>
-                    <div class="search-bar">
-                        <input type="text" placeholder="Tìm kiếm...">
-                        <button id="search-bar button"><i class="fa fa-search"></i></button>
-                    </div>
-                </li>
-                <li><a href="#">HOME | </a></li>
-                <li><a href="#">GIỚI THIỆU | </a></li>
-                <li><a href="#">THỰC ĐƠN</a></li>   
-                <li><a href=""><span class="button-icon"><i class="fa fa-cart-plus"></i></span></a></li>
-            </ul> 
-        </nav>
-    </header>
+    <div class="header">
+        <li class="opt"><div class="logo"><img src="../IMAGE/logoremove.png"></div></li>
+        <li class="opt">
+            <input type="text" placeholder="Tìm kiếm..." style="width: 180px;">
+        </li>
+        <li class="opt">
+            <button id="search-bar"><i class="fa fa-search"></i></button>
+        </li>
+        <li class="opt"><a href="../HTML/trangchu.html">HOME  </a></li>
+        <li class="opt"><a href="#">GIỚI THIỆU  </a></li>
+        <li class="opt"><a href="#">THỰC ĐƠN</a></li>   
+        <li class="opt"><a href=""><span class="button-icon" ><i class="fa fa-cart-plus"></i></span></a></li>
+    </div>
     <img src="../IMAGE/anhmenu.jpg" alt="" style="width: 100%;">
-    <main>
+    <br>
+    <div class="main">
         <h2 class="thucdon"><b>THỰC ĐƠN</b></h2>
         <h3 class="slogant">
             <i>“Sự kết hợp tinh tế giữa nguyên liệu tươi ngon và nghệ thuật nấu ăn”</i> 
@@ -43,42 +39,67 @@
             <button id="search-bar-button1"><i class="fa fa-search"></i></button>
             <button id="search-bar-button1"><i class="fa fa-filter"></i></button>
         </div>
+
         <br>
-        <button class="but">Món khác</button>
         <br>
-        <ul id="menu">
-            <li class="menu-item">
-                <img src="../IMAGE/MonKhac/salab-ca-ngu.jpg" alt="Lobster" class="food">
-                <h3>salad cá ngừ</h3>
-                <p class="price">150.000VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon"><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-            <li class="menu-item">
-                <img src="../IMAGE/MonKhac/salab-tom.jpg" alt="Lobster"class="food">
-                <h3>Salad Tôm</h3>
-                <p class="price">200.000VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon" ><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-            <li class="menu-item">
-                <img src="../IMAGE/MonKhac/soup-nam-hai-san.jpg" alt="Salmon" class="food">
-                <h3>Soup nấm hải sản</h3>
-                <p class="price">120.000VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon" ><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-        </ul>
-        <ul id="menu">
-            <li class="menu-item">
-                <img src="../IMAGE/MonKhac/soup-hai-san-tuyet-yen.jpg" alt="Lobster" class="food">
-                <h3>Soup Hải sản tuyết yến</h3>
-                <p class="price">100.000VNĐ</p>
-                <button class="add-to-cart"><a href=""><span class="button-icon"><i class="fa fa-cart-plus" style="color: black;"></i></span></a></button>
-            </li>
-        </ul>
+        <div class="but"><button style="float: right;background-color: #1b2534; color: white;">Món khác</button></div>
         <br>
-    <a href="../HTML/ThucDon_MonLau.html"><button class="but">tiếp theo</button></a>
+        <br>
+
+        <div class="menu">
+            <div class="tr">
+                <!-- width 33.3% height=300px -->
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/MonKhac/salab-ca-ngu.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Salad cá ngừ</b></span> <br>
+                        <span class="td"><b>Giá: 200.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/MonKhac/salab-tom.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Salad tôm</b></span> <br>
+                        <span class="td"><b>Giá: 250.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/MonKhac/soup-hai-san-tuyet-yen.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>Soup hải sản tuyết yến</b></span> <br>
+                        <span class="td"><b>Giá: 210.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+                <div class="menu_items">
+                    <div class="img">
+                        <img src="../IMAGE/MonKhac/soup-nam-hai-san.jpg" alt="">
+                    </div>
+                    <div class="describe">
+                        <span class="td"><b>soup nấm hải sản</b></span> <br>
+                        <span class="td"><b>Giá: 300.000 VNĐ</b></span> <br>
+                        <span class="td">&#9733 &#9733 &#9733 &#9733</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+    </div>
+
     <br>
-    </main>
-    <section class="footer">
+    <br>
+    <div class="but"><button style="float: right; background-color: #1b2534;"><a href="../HTML/ThucDon_Monlau.html">Tiếp theo</a></button></div>
+    <br>
+    <br>
+
+    <div class="footer">
         <div class="content">
           <div class="row justify-content">
             <div class="footer-item">
@@ -111,6 +132,6 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 </body>
 </html>
