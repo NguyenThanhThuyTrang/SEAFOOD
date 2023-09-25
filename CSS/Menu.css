@@ -33,14 +33,16 @@ body, html{
 }
 .header2 .bar .opt input{
     width: 200px; 
-    transform: translateX(-20%)
+    transform: translateX(-20%);
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
 }
 .opt{
     float: left;
     display: block;
     width: 100px;
     height: 30px;
-    padding: 10px 5px 0px 25px;
+    padding: 10px 5px 0px 15px;
     margin: 0 auto;
     text-transform: uppercase;
     overflow: visible;
