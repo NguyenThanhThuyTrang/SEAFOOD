@@ -31,17 +31,30 @@ body, html{
     padding: 5px 10px;
     cursor: pointer;
 }
+.header2 .bar .opt input{
+    width: 200px; 
+    transform: translateX(-20%)
+}
 .opt{
     float: left;
     display: block;
     width: 100px;
     height: 30px;
-    padding: 10px 15px 0px 15px;
+    padding: 10px 5px 0px 25px;
     margin: 0 auto;
     text-transform: uppercase;
     overflow: visible;
 }
-
+.logo, .bar{
+    display: inline;
+}
+.header2 .logo img{
+    width: 100px; 
+    height: 80px;
+    transform: translateY(-25%); /*tăng kích thước hình ảnh mà hình ảnh theo chiều đi lên 30%*/
+    float:left; 
+    padding-right:80px;
+}
 a{
     color: #fff;
     text-decoration: none; /*bỏ dấu gạch chân của link*/
