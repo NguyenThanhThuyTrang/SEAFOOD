@@ -12,7 +12,7 @@ body, html{
     height: 40px;
     background-color: #1B2534;
     color: #fff;
-    padding:20px;
+    padding:25px;
     text-align: center;
 }
 .header1{
@@ -35,7 +35,7 @@ body, html{
     display: block;
     width: 100px;
     height: 30px;
-    padding: 10px;
+    padding: 10px 15px 0px 15px;
     margin: 0 auto;
     text-transform: uppercase;
     overflow: visible;
@@ -70,11 +70,20 @@ a{
     text-align: center;
   
 }
-
+.search-bar1 button{
+    background-color: #1b2534;
+    color: #fff;
+    border-radius: 10px;
+    
+}
 .but{
     text-align: right;
     color: #f9f9f9;
     width: 80%;
+}
+.but button{
+    background-color: #1B2534;
+    border-radius: 5px;
 }
 .menu{
     width: 100%;
