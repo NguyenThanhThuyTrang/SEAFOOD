@@ -291,88 +291,45 @@
 
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Đóng"></button>
+                    <h3>Đăng nhập account của bạn</h3>
+                    <button type="button" class="btn btn-close" data-dismiss="modal"></button>
                 </div>
-                <div class="main">
-                    <div class="form signin">
-                        <div class="title">
-                            <h1>Đăng nhập account của bạn</h1>
+                <div class="modal-body">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="emailInput">Địa chỉ email</label>
+                            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
+                            placeholder="Nhập địa chỉ email của bạn">
+                            <span id="tb_email" style="color: red;"></span>
                         </div>
-                        <fieldset>
-                            <form class="formsig">
-                                <div class="form-group">
-                                    <label for="emailInput">Địa chỉ email</label>
-                                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
-                                        placeholder="Nhập địa chỉ email của bạn">
-                                    <span id="tb_email" style="color: red;"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label for="passwordInput">Mật khẩu</label>
-                                    <input type="password" class="form-control" id="passwordInput"
-                                        placeholder="Nhập mật khẩu của bạn">
-                                    <span id="tb_passDN" style="color: red;"></span>
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="rememberCheck">
-                                    <label class="form-check-label" for="rememberCheck">Ghi nhớ tài khoản của tôi</label>
-                                </div>
-                                <span id="tb_To_bu1" style="color: red;"></span>
-                                <button type="button" class="btn btn-primary" id="SigninAccount">Đăng nhập</button>
-                            </form>
-                        </fieldset>
-                        <p>Chưa có tài khoản ? 
-                            <a href="../HTML/DangKy.html">Tạo tài khoản</a>
-                        </p>
-                    </div>
-                    <div class="form signup">
-                        <div class="title">
-                            <h1>Tạo tài khoản của bạn</h1>
+                        <br>
+                        <div class="form-group">
+                            <label for="passwordInput">Mật khẩu</label>
+                            <input type="password" class="form-control" id="passwordInput"
+                                placeholder="Nhập mật khẩu của bạn">
+                            <span id="tb_passDN" style="color: red;"></span>
                         </div>
-                        <fieldset>
-                            <form class="formsig">
-                                <div class="form-group">
-                                    <label for="reemailInput">Địa chỉ email</label>
-                                    <input required="required" type="email" class="form-control" id="reemailInput"
-                                        aria-describedby="emailHelp" placeholder="Nhập địa chỉ email của bạn">
-                                    <span id="tb_Email_DK" style="color: red;"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label for="repasswordInput">Mật khẩu</label>
-                                    <input required="required" type="password" class="form-control" id="repasswordInput"
-                                        placeholder="Nhập mật khẩu của bạn">
-                                    <span id="tb_passDK" style="color: red;"></span>
-
-                                </div>
-                                <div class="form-group">
-                                    <label for="repassword">Xác nhận mật khẩu</label>
-                                    <input required="required" type="password" class="form-control" id="repassword"
-                                        placeholder="Xác nhận mật khẩu">
-                                    <span id="tb_repassDK" style="color: red;"></span>
-                                        
-                                </div>
-                                <div class="form-group">
-                                    <label for="fnameInput">Nhập họ tên</label>
-                                    <input required="required" type="text" class="form-control" id="fnameInput"
-                                        placeholder="Họ và tên">
-                                        <span id="tb_HoTen" style="color: red;"></span>
-                                </div>
-                                <button id="dangki-btn" type="button" class="btn btn-primary">Đăng kí</button>
-                            </form>
-                        </fieldset>
-                        <p>Đã có tài khoản ? <a href="#" class="login">Đăng nhập</a></p>
-                    </div>
-                    
+                        <br>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberCheck">
+                            <label class="form-check-label" for="rememberCheck">Ghi nhớ tài khoản của tôi</label>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
+                    <button type="button" class="btn btn-primary justify-content-center" id="SigninAccount">Đăng nhập</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    <span>Chưa có tài khoản ? 
+                        <a href="../HTML/DangKy.html">Tạo tài khoản</a>
+                        <p id="tb_To_bu1" style="color: red;"></p> 
+                    </span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-
+</div>
 
 <script>
   let login =document.querySelector('.login')
