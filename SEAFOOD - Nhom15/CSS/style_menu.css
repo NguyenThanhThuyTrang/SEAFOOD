@@ -1,0 +1,23 @@
+
+.header1{
+
+    height: 40px;
+    padding: 10px;
+    padding-left: 20px;
+    background-color: #0b3349;
+    color: #fff;
+}
+.header{
+    position: fixed;
+}
+.nav-link{
+    color: white;
+}
+.card-img-top{
+    height: 200px;
+}
+.card-container{
+    width: 80%; 
+    margin: auto;
+}
+  

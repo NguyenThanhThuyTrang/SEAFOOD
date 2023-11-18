@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeaFood</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/style_menu.css">
+    <script src="../JS/jquery-3.6.4.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/menu.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"/>
+      <style>
+          div.center{
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            color: black;
+          }
+
+          div.vertical-line{
+          width: 1px; 
+          background-color: black; 
+          height: 100px; 
+          float: left; 
+            
+        }
+      </style>
+
+  </head>
+  <body>
+    <div class="p-0 m-0" style="width: 100%; background-image: url(../IMAGE/Đặt\ bàn.jpg);background-repeat: no-repeat; background-size: cover;">
+      <div class="header fixed-top">
+        <div class="header1">
+            <i class="fa fa-phone"></i> <i>+84 245 4483</i>
+        </div>
+        <div class="navbar navbar-expand-md" style="background-color: #072022;" >
+                <a href="" class="navbar-brand me-5">
+                    <img src="../IMAGE/logoremove.png" alt="" style="width: 100px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#id1">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="id1">
+                    <form class="d-flex me-5">
+                        <input type="text" class="form-control me-2 border-0 bg-transparent" name="" id="" placeholder="search">
+                        <button type="button" class="btn">
+                            <span class="fa fa-search me-5" style="color: white;"></span>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav">
+                      <li class="nav-item me-4 ms-1 "><a href="../HTML/Trangchu.html" class="nav-link">HOME</a></li>
+                      <li class="nav-item me-4 ms-1"><a href="../HTML/Trangchu.html" class="nav-link">GIỚI THIỆU</a></li>
+                      <li class="nav-item me-4 ms-1"><a href="../HTML/ThucDon_Lau_BS.html" class="nav-link">THỰC ĐƠN</a></li>
+                      <li class="nav-item me-4 ms-1"><a href="#" class="nav-link">ĐẶT BÀN</a></li>
+                      <li class="nav-item me-4 ms-1">
+                          <a href="../HTML/giohang.html" class="nav-link">
+                            <span class="button-icon"><i class="fa fa-cart-plus"></i> <sup>+</sup> <sup id="cart" name="cart">0</sup></span>
+                          </a>
+                      </li>
+                      <li class="nav-item me-3 ms-1">
+                        <a href="" class="nav-link">
+                            <span class="fa fa-user-circle"></span>
+                        </a>
+                      </li>
+                      <li class="nav-item ms-5" style="display: block;">
+                        <span id="user" style="color: aliceblue;"><button class="btn text-white" style="background-color: #0b3349;" data-toggle="modal" data-target="#loginModal">Đăng nhập</button></span>
+                      </li>
+                  </ul>
+                </div>
+        </div>
+      </div>
+      <div class="center">
+        <img src="../IMAGE/clock.png" alt="" width="200" style="margin-top: 20%; margin-bottom: 20px;">
+      </div>
+      <div class="center" style="color: #072022;"><h2 style="background-color: white; border-radius: 5px; padding: 5px;">Giờ mở cửa</h2> <br>
+      </div>
+      <div class="center">Thứ 2 - Chủ nhật &nbsp <div class="vertical-line" style="height: 25px;"></div> &nbsp Từ 6h30 đến 22h</div>
+      <div class="form" style="width: 60%;margin: auto">
+          <form action="">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <input required="required" type="text" class="form-control" id="fnameInput"
+                      placeholder="Họ và tên">
+                      <span id="tb_HoTen" style="color: red;"></span>
+                </div>
+              </div>
+              <div class="col-6 text-right">
+                <div class="form-group">
+                  <input required="required" type="text" class="form-control" id="sdt"
+                      placeholder="Nhập số điện thoại">
+                  <span id="tbsdt" style="color: red"></span>
+                </div>
+              </div>
+            </div>  
+            <hr width="0px">
+            <div class="row">
+              <div class="col text-right ">
+                <div class="form-control" style="background-color: white;width: 100%; height: 50px;">
+                  <label for="#ngaydat" class="text-secondary pt-2">Ngày đặt: </label>
+                  <input type="date" name="ngaydat" style="border: none;" id="tbngaydat">
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-control" style="background-color: white;width: 100%;; ">
+                  <div class="row">
+                    <div class="col-6">
+                      <label for="Time" class="text-secondary text-start mt-2">Giờ:</label>
+                      <span class="errGio text-danger">(*)</span>
+                    </div>
+                    <div class="col-6">
+                      <select name="Time" id="Time" style=" border: none;" class="form-control";>
+                        <option value="7:00">7:00</option>
+                        <option value="7:30">7:30</option>
+                        <option value="8:00">8:00</option>
+                        <option value="8:30">8:30</option>
+                        <option value="9:00">9:00</option>
+                        <option value="9:30">9:30</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                        <option value="21:30">21:30</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>    
+              </div>
+              <div class="col">
+                <div class="form-control" style="background-color: white;width: 100%; height: 50px;">
+                  <div class="row">
+                    <div class="col-6">
+                      <label for="Time" class="text-secondary text-start mt-2">Số khách</label>
+                      <span class="errGio text-danger">(*)</span>
+                    </div>
+                    <div class="col-6">
+                      <input type="text" placeholder="" style="width: 100% ; border: none;" id="tbsokhach">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr width="0px">
+            <div class="row">
+              <div class="col-6 text-left ">
+                <div class="form-control" style="background-color: white; width: 100%; border:none" >
+                  <div class="row">
+                    <div class="col-4">
+                      <label for="view" class="text-secondary">Chọn view: </label>
+                      <span class="errView text-danger" >(*)</span>
+                    </div>
+                    <div class="col-8 text-end">
+                      <select name="view" style=" border: none;" id="tbview">
+                        <option value="2">Gần cửa ra vào</option>
+                        <option value="3">Hướng thành phố</option>
+                        <option value="4">Hướng ra biển</option>
+                        <option value="5">Trung tâm</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 text-right ">
+                <div class="form-control" style="background-color: white; width: 50%; border:none" >
+                  <div class="row">
+                    <div class="col-8">
+                      <label for="sl" class="text-secondary">Số lượng</label>
+                      <span class="errSL text-danger">(*)</span>
+                    </div>
+                    <div class="col-3 text-end">
+                      <select name="sl" id="tbsl" autofocus style=" border: none;" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-12">
+                <textarea class="form-control" name="" id="tbghichu" cols="120" rows="5" placeholder="ghi chú(*)"></textarea>
+              </div>
+            </div>
+            <hr width="0px">
+            <div class="row">
+              <div class="col-12 text-center">
+                <button type="button" id="dangki-btn" class="btn btn-secondary form-control" data-toggle="modal" data-target="#myModal" style="width: 20%;">
+                  Xác nhận
+                </button>
+              </div>
+            </div>
+          </div>   
+          </form> 
+      <div class="row">
+        <div class="con-12">
+            <h1 class="text-center mt-5">
+                DANH SÁCH ĐẶT BÀN TRỰC TUYẾN
+            </h1>
+            <table class="table table-bordered bg-white text-dark" id="tableDS">
+                <tr>
+                    <th>STT</th>
+                    <th>Họ Tên</th>
+                    <th>Số điện thoại</th>
+                    <th>Ngày đặt</th>
+                    <th>Giờ</th>
+                    <th>Số Khách</th>
+                    <th>View</th>
+                    <th>Số lượng</th>
+                    <th>Ghi chú</th>
+                </tr>
+            </table>
+        </div>
+      </div>
+    <div class="footer pt-5">
+      <div class="footer text-white pt-5 pb-4" style="background-color: #072022">
+          <div class="container">
+            <div class="row text-start">
+              <div class="col-md-3 ms-5">
+                <h4 class="text">SEA FOOD</h4>
+                <p>
+                  <i class="fa fa-home"></i>
+                  <span><i> Mở cửa 06:30 - 22:00 giờ mỗi ngày</i></span><br />
+                  <i class="fa fa-map-marker"></i>
+                  <span><i> 12 Nguyễn Văn Bảo, P.4, Quận Gò Vấp, TP.HCM</i></span><br />
+                  <i class="fa fa-phone"></i>
+                  <span><i> +84 245 4483</i></span><br />
+                  <i class="fa fa-envelope"></i
+                  ><span><i> <a href = "mailto: seafood@gmail.com">seafood@gmail.com</a></i></span><br />
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                </p>
+              </div>
+    
+              <div class="col-md-3 ms-5">
+                <h4 class="text">MÓN NGON MỖI NGÀY</h4>
+                <ul class="list-group">
+                  <li class="list-inline-item">
+                    <a href="" class="text-white" style="text-decoration: none" title="GỎI NGÓ SEN TÔM MỰC"
+                      >GỎI NGÓ SEN TÔM MỰC</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="" class="text-white" style="text-decoration: none" title="SALAD CÁ NGỪ"
+                      >SALAD CÁ NGỪ</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="" class="text-white" style="text-decoration: none" title="SOUP HẢI SẢN TUYẾT YẾN"
+                      >SOUP HẢI SẢN TUYẾT YẾN</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="" class="text-white" style="text-decoration: none" title="HÀU NƯỚNG MUỐI ỚT"
+                      >HÀU NƯỚNG MUỐI ỚT</a>
+                  </li>
+                </ul>
+              </div>
+    
+              <div class="col-md-3 ms-5">
+                <h4 class="text">LIÊN KẾT NHANH</h4>
+                <ul class="list-group ">
+                  <li class="list-inline-item">
+                    <a href="../HTML/Trangchu.html" class="text-white" style="text-decoration: none" title="Trang chủ"
+                      >Trang chủ</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="" class="text-white" style="text-decoration: none" title="Giới thiệu"
+                      >Giới thiệu</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="" class="text-white" style="text-decoration: none" title="Đặt bàn"
+                      >Đặt bàn</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="" class="text-white" style="text-decoration: none" title="Giỏ hàng"
+                      >Giỏ hàng</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="" class="text-white" style="text-decoration: none" title="Thực đơn"
+                      >Thực đơn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <div class="row text-lg-center">
+                <div class="col-sm-12 col-xs-12">
+                    <b><p>&copy; 2023 -<span>&nbsp;Seafood</span></p></b>
+                    <p>Nhóm phát triển: nhóm 15</p>
+                    <p><i>Thành viên: Đào Hoa Anh Thư, Đỗ Nguyễn Quỳnh Hương, Trần Thu Huyền, Trần Cao Kiệt, Nguyễn Thanh Thùy Trang</i> </p>
+                </div>
+            </div>
+          </div>
+          </div>
+    </div>
+  </body>
+</html>
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="text-center">
+          Thông báo
+        </h4>
+        <button type="button" class="btn-close" data-dismiss="modal">&times;</button>                      
+      </div>        
+      <div class="modal-body text-center">
+        Mời quý khách chọn món bằng cách thêm vào giỏ hàng <br>
+        <a href="../HTML/ThucDon_Lau_BS.html"><input type="button" class="btn btn-primary" value="Thực đơn"></a>
+      </div>                   
+    </div>
+  </div>
+</div>
+
+<script>
+  function KiemtraHoTen() {
+      var rgc= /^[A-Za-za-zA-Z\s|À|Á|Â|Ã|È|É|Ê|Ì|Í|Ò|Ó|Ô|Õ|Ù|Ú|Ă|Đ|Ĩ|Ũ|Ơ|à|á|â|ã|è|é|ê|ì|í|ò|ó|ô|õ|ù|ú|ă|đ|ĩ|ũ|ơ|Ư|Ă|Ạ|Ả|Ấ|Ầ|Ẩ|Ẫ|Ậ|Ắ|Ằ|Ẳ|Ẵ|Ặ|Ẹ|Ẻ|Ẽ|Ề|Ề|Ể|Ế|ư|ă|ạ|ả|ấ|ầ|ẩ|ẫ|ậ|ắ|ằ|ẳ|ẵ|ặ|ẹ|ẻ|ẽ|ề|ề|ể|ế|Ễ|Ệ|Ỉ|Ị|Ọ|Ỏ|Ố|Ồ|Ổ|Ỗ|Ộ|Ớ|Ờ|Ở|Ỡ|Ợ|Ụ|Ủ|Ứ|Ừ|ễ|ệ|ỉ|ị|ọ|ỏ|ố|ồ|ổ|ỗ|ộ|ớ|ờ|ở|ỡ|ợ|ụ|ủ|ứ|ừ|Ử|Ữ|Ự|Ỳ|Ỵ|Ý|Ỷ|Ỹ|ử|ữ|ự|ỳ|ỵ|ỷ|ỹ|]+$/;
+      if(  rgc.test($("#fnameInput").val()) == true ) {
+              return true;
+          } else {
+              $("#tb_HoTen").html("Tên không hợp lệ");          
+              return false;
+          }
+  }
+  var i =1;
+  $("#fnameInput").blur(KiemtraHoTen);
+
+  function ktsdt() {
+              let sdt = $('#sdt').val();
+              let btcq = /^(03|09|08|07)[0-9]{8}$/;
+              if (sdt == "") {
+                  $('#tbsdt').html("Không được để trống");
+                  return false;
+              ;} else if(btcq.test(sdt)){
+                $('#tbsdt').html("");
+                return true;
+              } else{
+                $('#tbsdt').html("số điện thoại phải có 10 sô và bắt đầu bằng 03,09,08 hoặc 0,7");
+                return false;
+              }
+          }
+          $('#sdt').blur(function(e){
+              ktsdt();
+          });
+          var i =1
+  $("#dangki-btn").click(function(e){
+    if(KiemtraHoTen() && ktsdt()){
+      let hoten = $("#fnameInput").val();
+      let SDT = $("#sdt").val();
+      let ngaydat = $("#tbngaydat").val();
+      let gio = $("#Time").val();
+      let sokhach = $("#tbsokhach").val();
+      let view = $("#tbview").val();
+      let soluong = $("#tbsl").val();
+
+      var information = JSON.parse(localStorage.getItem('information')||'[]')
+      var thongtin ={
+        name: hoten,
+        phone: SDT,
+        hours: gio,
+        ngaydat: ngaydat,
+        sokhach: sokhach,
+        view: view,
+        soluong: soluong
+      }
+      information.push(thongtin);
+      localStorage.setItem('information', JSON.stringify(information));
+
+      let tdnew = "<tr><td>" + (i++) + "</td><td>" + hoten + "</td><td>" + SDT + "</td><td>" + ngaydat + "</td><td>" + gio + "</td><td>" + sokhach + "</td><td>" + view + "</td><td>" + soluong + "</tr></td>";
+      $("#tableDS").append(tdnew);
+      $("#myModal").modal("hide");
+    } else{
+      elert("Thông tin không hợp lệ")
+    }
+  })
+</script>
+<script>
+  $(document).ready(function() {
+      var information = JSON.parse(localStorage.getItem('users'));
+      var thongtin = information[0];
+      document.getElementById("user").innerHTML = thongtin.name;
+
+  });
+</script>

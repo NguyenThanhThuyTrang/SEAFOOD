@@ -1,0 +1,109 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    text-decoration: none;
+    list-style-type: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* trang chu */
+.content{
+    border: 2px dashed #072022;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+/* modal */
+.btn-primary {
+    background-color: #142F4E;
+    color: #fff;
+}
+
+.modal-dialog {
+    margin: auto;
+    max-width: 100%;
+}
+  
+.modal-content {
+    padding: 5px 10px;
+    background-color: #fcfcfc;
+    border-radius: 26px;
+    min-width: 640px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.modal-header {
+    border: none;
+}
+/* main = medal-body */
+.main {
+    border: none;
+    padding: 0px 72px;
+}
+
+.main .form-control{
+    display: block;
+    width: 100%;
+    color: #909090;
+    border: none;
+    border-bottom: 1px solid #8c8c8c;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+.main .formsig {
+    width: 80%;
+    margin: auto;
+}
+
+.main .form.signin .form-group {
+    margin-bottom: 50px;
+}
+
+.form-group {
+    font-size: 20px;
+}
+
+.title h1 {
+    margin-bottom: 55px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.main button.btn.btn-primary {
+    width: 100%;
+    background: #0381FE;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.modal-footer {
+    border: none;
+}
+.main p{
+    font-size: 20px;
+    text-align: right;
+}
+/* js */
+.main .form.signup,
+.main.signupForm .form.signin{
+    display: none;
+}
+
+.main.signupForm .form.signup {
+    display: none;
+
+}
+
+table td {
+    background-color: #f0f0f0;
+    text-align: center;
+    vertical-align: middle !important; 
+  }
+  
+
+ 

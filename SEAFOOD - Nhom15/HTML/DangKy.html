@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+                            
+<body>
+    <div class="container" style="margin-top: 80px;">
+        <li>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SignInModal">
+                Đăng ký
+            </button>
+        </li>
+        <center><h3>Danh sách tài khoản</h3></center>
+
+    </div>
+
+    <div class="modal fade" id="SignInModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Tạo tài khoản của bạn</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Đóng">
+                        <span aria-hidden="true">&times;</span>
+                    </button>                   
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="reemailInput">Địa chỉ email</label>
+                            <input required="required" type="email" class="form-control" id="reemailInput"
+                                aria-describedby="emailHelp" placeholder="Nhập địa chỉ email của bạn">
+                            <span id="tb_Email_DK" style="color: red;"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sdt">Số điện thoại:</label>
+                            <input required="required" type="text" class="form-control" id="sdt"
+                                 placeholder="Nhập số điện thoại của bạn">
+                            <span id="tbsdt" style="color: red;"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="repasswordInput">Mật khẩu</label>
+                            <input required="required" type="password" class="form-control" id="repasswordInput"
+                                placeholder="Nhập mật khẩu của bạn">
+                            <span id="tb_passDK" style="color: red;"></span>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="repassword">Xác nhận mật khẩu</label>
+                            <input required="required" type="password" class="form-control" id="repassword"
+                                placeholder="Xác nhận mật khẩu">
+                            <span id="tb_repassDK" style="color: red;"></span>
+                                
+                        </div>
+                        <div class="form-group">
+                            <label for="fnameInput">Nhập họ tên</label>
+                            <input required="required" type="text" class="form-control" id="fnameInput"
+                                placeholder="Họ và tên">
+                                <span id="tb_HoTen" style="color: red;"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer"></div>
+                <button id="dangki-btn" type="button" class="btn btn-primary" data-dismiss="modal">Đăng kí</button>
+            </div>
+        </div>
+    </div>
+    <div id="successMessage" class="alert alert-success mt-4" style="display: none;">
+        Đăng ký thành công! <a href="../HTML/Trangchu.html" >Đăng nhập</a>
+    </div>
+    <br><br><hr>    
+   <div class="container">
+        <table class="table table-borderd table-hover">
+            <thead>
+                <tr style="text-align: center;">
+                    <th>STT</th>
+                    <th>Email</th>
+                    <th>Số điện thoại</th>
+                    <th>Họ tên</th>
+                    <th>Mật khẩu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>dhcntphcm@gmail.com</td>
+                    <td>01245556788</td>
+                    <td>Cong Nghiep</td>
+                    <td>dhcntphcm9999</td>
+                </tr>
+            </tbody>
+        </table>
+   </div>
+
+
+
+   <script>
+        function KTDangKy(){
+                var rgc = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if(  rgc.test($("#reemailInput").val()) == true ) {
+                    $("#tb_Email_DK").html("Email hợp lệ");  
+                    return true;
+                } else {
+                    $("#tb_Email_DK").html("Email không hợp lệ");          
+                    return false;
+                }
+        }               
+        $("#reemailInput").blur(KTDangKy);
+
+        function ktsdt() {
+                let sdt = $('#sdt').val();
+                let btcq = /^(03|09|08|07)[0-9]{8}$/;
+                if (sdt == "") {
+                    $('#tbsdt').html("Không được để trống");
+                    return false;
+                } else if (btcq.test(sdt)) {
+                    $('#tbsdt').html("Sai định dạng số điện thoại: 10 con số trong đó luôn bắt đầu 09,03,08 hoặc 07.");
+                    return false;
+                } else {
+                    $('#tbsdt').html("SDT hợp lệ");
+                    return true;
+                }
+            }
+
+            $('#sdt').blur(function(e){
+                ktsdt();
+            });
+
+        function KTDangKyMK(){
+                var rgc = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{10,20}$/;
+                if(  rgc.test($("#repasswordInput").val()) == true ) {
+                    $("#tb_passDK").html("Mật khẩu hợp lệ");  
+                    return true;
+                } else {
+                    $("#tb_passDK").html("Mật khẩu không hợp lệ");          
+                    return false;
+                }
+        }
+        $("#repasswordInput").blur(KTDangKyMK);
+
+
+        function KiemtraNhapLaiMK(){
+            const passwordInput = document.getElementById("repasswordInput");
+            const password = passwordInput.value;
+
+            const confirmPasswordInput = document.getElementById("repassword");
+            const confirmPassword = confirmPasswordInput.value;
+            if (password === confirmPassword){
+                $("#tb_repassDK").html("Mật khẩu đã trung khớp");  
+                    return true;
+                } else {
+                    $("#tb_repassDK").html("Mật khẩu không trùng khớp");          
+                    return false;
+                }
+        }
+        $("#repassword").blur(KiemtraNhapLaiMK);
+
+
+        function KiemtraHoTen() {
+            var rgc= /^[A-Za-za-zA-Z\s|À|Á|Â|Ã|È|É|Ê|Ì|Í|Ò|Ó|Ô|Õ|Ù|Ú|Ă|Đ|Ĩ|Ũ|Ơ|à|á|â|ã|è|é|ê|ì|í|ò|ó|ô|õ|ù|ú|ă|đ|ĩ|ũ|ơ|Ư|Ă|Ạ|Ả|Ấ|Ầ|Ẩ|Ẫ|Ậ|Ắ|Ằ|Ẳ|Ẵ|Ặ|Ẹ|Ẻ|Ẽ|Ề|Ề|Ể|Ế|ư|ă|ạ|ả|ấ|ầ|ẩ|ẫ|ậ|ắ|ằ|ẳ|ẵ|ặ|ẹ|ẻ|ẽ|ề|ề|ể|ế|Ễ|Ệ|Ỉ|Ị|Ọ|Ỏ|Ố|Ồ|Ổ|Ỗ|Ộ|Ớ|Ờ|Ở|Ỡ|Ợ|Ụ|Ủ|Ứ|Ừ|ễ|ệ|ỉ|ị|ọ|ỏ|ố|ồ|ổ|ỗ|ộ|ớ|ờ|ở|ỡ|ợ|ụ|ủ|ứ|ừ|Ử|Ữ|Ự|Ỳ|Ỵ|Ý|Ỷ|Ỹ|ử|ữ|ự|ỳ|ỵ|ỷ|ỹ|]+$/;
+            if(  rgc.test($("#fnameInput").val()) == true ) {
+                    $("#tb_HoTen").html("Tên hợp lệ");  
+                    return true;
+                } else {
+                    $("#tb_HoTen").html("Tên không hợp lệ");          
+                    return false;
+                }
+        }
+        $("#fnameInput").blur(KiemtraHoTen);
+        
+        var i = 1;
+
+        $("#dangki-btn").click(function(){    
+            i = i + 1 ;       
+            if ( !KTDangKy() || !KTDangKyMK() || !KiemtraNhapLaiMK || !KiemtraHoTen ){
+                alert("Mời bạn nhập đúng và đủ thông tin");
+                return false;
+            } else {
+                var email = $("#reemailInput").val();
+                var passs = $("#repasswordInput").val();
+                var namee = $("#fnameInput").val();
+                var sdt = $("#sdt").val();
+                // Kiểm tra email đã tồn tại trong local storage hay chưa
+                var users = JSON.parse(localStorage.getItem('users') || '[]');
+                var isEmailExist = users.some(function(user) {
+                    return user.email === email;
+                });
+
+                if (isEmailExist) {
+                    alert('Email đã tồn tại');
+                    return false;
+                }
+
+                // Lưu thông tin vào local storage
+                var newUser = {
+                    email: email,
+                    password: passs,
+                    name: namee,
+                    sdt : sdt
+                };
+                users.push(newUser);
+                localStorage.setItem('users', JSON.stringify(users));
+
+                var them1 = "<tr> <td>" + (i) + "</td><td>" + email +"</td><td>" + sdt +"</td><td>" +  namee + "</td><td>" + passs + "</td></tr>";
+                $("table tbody").append(them1);
+                $("#SignInModal").modal("hide");
+                $('#successMessage').show();
+                return true;
+            }
+        });   
+   </script>   
+</body>
+</html>

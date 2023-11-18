@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toan</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/thanhtoan.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/thanhtoan.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-1"><a href="../HTML/Trangchu.html" onclick="goBack()" class="btn btn-light">
+                    <span class="button-icon">
+                        <i class="fa fa-arrow-left"></i>
+                    </span></a></div>
+                <div class="col-11"><h1>
+                    <span class="button-icon">
+                         <i class="fas fa-university"></i>
+                    </span>Thanh toán</h1></div>
+            </div>
+        </div>
+    </header>
+    <main>
+      <div class="ctn">
+        <div class="container-fluid">
+            <table class="table table-striped" id="tableThanhToan">
+                <thead>
+                    <tr>
+                        <th>Tên món</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <div id="div3">
+            <b>Tổng tiền</b>
+        </div>
+
+       <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                  <p><b>$ Phương thức thanh toán</b> </p>
+            </div>
+            <div class="col-6">
+               <div> 
+                <label for="menu"></label>
+                    <select id="menu" name="menu">
+                     
+                        <option value="Thanh toán bằng tiền mặt">Thanh toán bằng tiền mặt</option>
+                        <option value="Thanh toán qua ngân hàng">Thanh toán qua ngân hàng</option>                           
+                    </select>
+                </div>
+          </div> 
+        </div>  
+       </div>
+        <div class="div1">
+            <p>Nhấn nút "Thanh toán"</a>" nghĩa là bạn đã đồng tuân theo các <a href="#">Điều khoản của nhà hàng</a></p>
+          </div>
+          <div id="div2">
+            <a class="btn" style="color: aliceblue; background-color: #072022;" href="../html/donhang.html">
+                Thanh toán</a>
+        </div>
+    </main>
+    <div class="footer pt-5">
+        <div class="footer text-white pt-5 pb-4" style="background-color: #072022">
+            <div class="container">
+              <div class="row text-start">
+                <div class="col-md-3 ms-5">
+                  <h4 class="text">SEA FOOD</h4>
+                  <p>
+                    <i class="fa fa-home"></i>
+                    <span><i> Mở cửa 06:30 - 22:00 giờ mỗi ngày</i></span><br />
+                    <i class="fa fa-map-marker"></i>
+                    <span><i> 12 Nguyễn Văn Bảo, P.4, Quận Gò Vấp, TP.HCM</i></span><br />
+                    <i class="fa fa-phone"></i>
+                    <span><i> +84 245 4483</i></span><br />
+                    <i class="fa fa-envelope"></i
+                    ><span><i> <a href = "mailto: seafood@gmail.com">seafood@gmail.com</a></i></span><br />
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                  </p>
+                </div>
+      
+                <div class="col-md-3 ms-5">
+                  <h4 class="text">MÓN NGON MỖI NGÀY</h4>
+                  <ul class="list-group">
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="GỎI NGÓ SEN TÔM MỰC"
+                        >GỎI NGÓ SEN TÔM MỰC</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="SALAD CÁ NGỪ"
+                        >SALAD CÁ NGỪ</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="SOUP HẢI SẢN TUYẾT YẾN"
+                        >SOUP HẢI SẢN TUYẾT YẾN</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="HÀU NƯỚNG MUỐI ỚT"
+                        >HÀU NƯỚNG MUỐI ỚT</a>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="col-md-3 ms-5">
+                  <h4 class="text">LIÊN KẾT NHANH</h4>
+                  <ul class="list-group ">
+                    <li class="list-inline-item">
+                      <a href="../HTML/Trangchu.html" class="text-white" style="text-decoration: none" title="Trang chủ"
+                        >Trang chủ</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#intro" class="text-white" style="text-decoration: none" title="Giới thiệu"
+                        >Giới thiệu</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="Đặt bàn"
+                        >Đặt bàn</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="Giỏ hàng"
+                        >Giỏ hàng</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="../HTML/ThucDon_Lau_BS.html" class="text-white" style="text-decoration: none" title="Thực đơn"
+                        >Thực đơn</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <div class="row text-lg-center">
+                  <div class="col-sm-12 col-xs-12">
+                      <b><p>&copy; 2023 -<span>&nbsp;Seafood</span></p></b>
+                      <p>Nhóm phát triển: nhóm 15</p>
+                      <p><i>Thành viên: Đào Hoa Anh Thư, Đỗ Nguyễn Quỳnh Hương, Trần Thu Huyền, Trần Cao Kiệt, Nguyễn Thanh Thùy Trang</i> </p>
+                  </div>
+              </div>
+            </div>
+            </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    var tableThanhToan = document.getElementById("tableThanhToan");
+    var tbody = tableThanhToan.getElementsByTagName("tbody")[0];
+    var totalAmount = 0;
+
+    // Lấy giỏ hàng từ localStorage
+    var carts = JSON.parse(localStorage.getItem('Carts'));
+
+    Object.keys(carts).forEach(function (cartKey) {
+        var cartItem = carts[cartKey][0];
+        var name = cartItem.name;
+        var price = parseFloat(cartItem.price);
+        var quantity = parseInt(cartItem.quantity);
+        var totalPrice = price * quantity;
+
+        var newRow = document.createElement("tr");
+
+        var nameCell = document.createElement("td");
+        nameCell.textContent = name;
+        newRow.appendChild(nameCell);
+
+        var priceCell = document.createElement("td");
+        priceCell.textContent = price.toFixed(2);
+        newRow.appendChild(priceCell);
+
+        var quantityCell = document.createElement("td");
+        quantityCell.textContent = quantity;
+        newRow.appendChild(quantityCell);
+
+        var totalCell = document.createElement("td");
+        totalCell.textContent = totalPrice.toFixed();
+        newRow.appendChild(totalCell);
+
+        tbody.appendChild(newRow);
+
+        totalAmount += totalPrice;
+    });
+      
+
+
+    // Hiển thị tổng tiền
+    document.getElementById("div3").innerHTML = "<b>Tổng tiền:</b> $" + totalAmount.toFixed();
+});
+
+    </script>
+  
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuocuong</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/style_menu.css">
+    <script src="../JS/jquery-3.6.4.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/menu.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"/>
+
+</head>
+<body>
+    <div class="p-0 m-0" style="width: 100%;">
+      <div class="header fixed-top">
+        <div class="header1">
+           <i class="fa fa-phone"></i> <i>+84 245 4483</i>
+        </div>
+        <div class="navbar navbar-expand-md" style="background-color: #072022;" >
+                <a href="" class="navbar-brand me-5">
+                    <img src="../IMAGE/logoremove.png" alt="" style="width: 100px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#id1">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="id1">
+                    <form class="d-flex me-5">
+                        <input type="text" class="form-control me-2 border-0 bg-transparent" name="" id="" placeholder="search">
+                        <button type="button" class="btn">
+                            <span class="fa fa-search me-5" style="color: white;"></span>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav">
+                      <li class="nav-item me-4 ms-1 "><a href="../HTML/Trangchu.html" class="nav-link">HOME</a></li>
+                      <li class="nav-item me-4 ms-1"><a href="../HTML/Trangchu.html" class="nav-link">GIỚI THIỆU</a></li>
+                      <li class="nav-item me-4 ms-1"><a href="../HTML/ThucDon_Lau_BS.html" class="nav-link">THỰC ĐƠN</a></li>
+                      <li class="nav-item me-4 ms-1"><a href="../HTML/datban_.html" class="nav-link">ĐẶT BÀN</a></li>
+                      <li class="nav-item me-4 ms-1">
+                          <a href="../HTML/giohang.html" class="nav-link">
+                            <span class="button-icon"><i class="fa fa-cart-plus"></i> <sup>+</sup> <sup id="cart" name="cart">0</sup></span>
+                          </a>
+                      </li>
+                      <li class="nav-item me-3 ms-1">
+                        <a href="" class="nav-link">
+                            <span class="fa fa-user-circle"></span>
+                        </a>
+                      </li>
+                      <li class="nav-item ms-5" style="display: block;">
+                        <span id="user" style="color: aliceblue;"><button class="btn text-white" style="background-color: #0b3349;" data-toggle="modal" data-target="#loginModal">Đăng nhập</button></span>
+                      </li>
+                  </ul>
+                </div>
+        </div>
+      </div>
+      
+      <div class="carousel carousel-fade slide" data-bs-ride="carousel" id="demo">
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              </div>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="../IMAGE/trang-chu-1.jpg" alt="" style="width: 100%; height: 550px;">
+                      <div class="carousel-caption">
+                        <h3>SEAFOOD</h3>
+                        <p>Welcom to SeaFood</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="../IMAGE/Đặt bàn.jpg" alt="" style="width: 100%; height: 550px;">
+                      <div class="carousel-caption">
+                        <h3>SEAFOOD</h3>
+                        <p>Hải sản tươi sống mang cảm giác biển cả</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="../IMAGE/nen.jpg" alt="" style="width: 100%; height: 550px;">
+                      <div class="carousel-caption">
+                        <h3>SEAFOOD</h3>
+                        <p>Trải nghiệm ẩm thực độc đáo</p>
+                      </div>
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next">
+                  <span class="carousel-control-next-icon" data-bs-target="#demo" data-bs-slide="next"></span>
+              </button>
+      </div>
+
+      <div class="text-center mt-3">
+        <img src="../IMAGE/icon-restaurant.png" alt="">
+      </div>
+      <div class="h1 text-center mt-3">Thực Đơn</div>
+      <div class="text-center mt-3 mb-3"><i>“Sự kết hợp tinh tế giữa nguyên liệu tươi ngon và nghệ thuật nấu ăn”</i></div>
+      <div class="text-center mb-5">
+          <input type="text" placeholder="Tìm kiếm...">
+          <button type="button" class="border-0" id="search-bar-button1" ><span class="fa fa-search"></span></button>
+          <button type="button" class="border-0 dropdown-toggle" data-bs-toggle="dropdown" id="slice-button2"><span class="fa fa-filter"></span></button>
+          <div class="dropdown-menu">
+              <p class="dropdown-item"><a href="../HTML/ThucDon_Lau_BS.html" style="text-decoration: none; color: black;">Món lẩu</a></p>
+              <p class="dropdown-item"><a href="../HTML/ThucDon_Nuong_BS.html" style="text-decoration: none; color: black;">Món nướng</a></p>
+              <p class="dropdown-item active"><a href="#" style="text-decoration: none; color: black;">Nước uống</a></p>
+              <p class="dropdown-item"><a href="../HTML/ThucDon_MonKhac_BS.html" style="text-decoration: none; color: black;">Món khác...</a></p>
+          </div>
+      </div>
+      <div class="row justify-content-center mb-5 card-container">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../IMAGE/NuocUong/bia.webp" alt="" class="card-img-top">
+                    <p class="card-text">
+                        <h6 class="card-title">Bia</h6>
+                        <p>50.000VNĐ</p>
+                        <p>&#9733 &#9733 &#9733 &#9733</p>
+                    </p>
+                    <button href="" class="btn text-white add-cart cart1"style="background-color: #072022;"  id="btn-cart" onclick="cartplus(), addCart('Bia',50000,'cart11')">thêm giỏ hàng <span class="fa fa-cart-plus"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../IMAGE/NuocUong/biaSG.jpg" alt="" class="card-img-top">
+                    <p class="card-text">
+                        <h6 class="card-title">Bia Sài Gòn</h6>
+                        <p>40.000VNĐ</p>
+                        <p>&#9733 &#9733 &#9733 &#9733</p>
+                    </p>
+                    <button href="" class="btn text-white add-cart"style="background-color: #072022;" id="btn-cart" onclick="cartplus(), addCart('Bia Sài Gòn',40000,'cart12')">thêm giỏ hàng <span class="fa fa-cart-plus"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../IMAGE/NuocUong/CaRot.jpg" alt="" class="card-img-top">
+                    <p class="card-text">
+                        <h6 class="card-title">Nước ép cà rốt</h6>
+                        <p>55.000VNĐ</p>
+                        <p>&#9733 &#9733 &#9733 &#9733</p>
+                    </p>
+                    <button href="" class="btn text-white add-cart" style="background-color: #072022;"  id="btn-cart" onclick="cartplus() , addCart('Nước ép cà rốt',55000,'cart13')">thêm giỏ hàng <span class="fa fa-cart-plus"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+              <div class="card-body">
+                  <img src="../IMAGE/NuocUong/Dua.jpg" alt="" class="card-img-top">
+                  <p class="card-text">
+                      <h6 class="card-title">Nước ép dứa</h6>
+                      <p>58.000VNĐ</p>
+                      <p>&#9733 &#9733 &#9733 &#9733</p>
+                  </p>
+                  <button href="" class="btn text-white add-cart"style="background-color: #072022;"  id="btn-cart" onclick="cartplus(), addCart('Nước ép dứa',58000,'cart14')">thêm giỏ hàng <span class="fa fa-cart-plus"></span></button>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="row justify-content-center mb-5 card-container">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../IMAGE/NuocUong/Larue.jpg" alt="" class="card-img-top">
+                    <p class="card-text">
+                        <h6 class="card-title">Bia Larue </h6>
+                        <p>60.000VNĐ</p>
+                        <p>&#9733 &#9733 &#9733 &#9733</p>
+                    </p>
+                    <button href="" class="btn text-white add-cart cart2"style="background-color: #072022;" id="btn-cart" onclick="cartplus(),addCart('Bia Larue',60000,'cart15')">thêm giỏ hàng <span class="fa fa-cart-plus"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../IMAGE/NuocUong/NuocCam.jpg" alt="" class="card-img-top">
+                    <p class="card-text">
+                        <h6 class="card-title">Nước ép cam</h6>
+                        <p>55.000VNĐ</p>
+                        <p>&#9733 &#9733 &#9733 &#9733</p>
+                    </p>
+                    <button href="" class="btn text-white add-cart cart3" style="background-color: #072022;"  id="btn-cart" onclick="cartplus(),addCart('Nước ép cam',55000,'cart16')">thêm giỏ hàng <span class="fa fa-cart-plus"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+              <div class="card-body">
+                  <img src="../IMAGE/NuocUong/OiEp.jpg" alt="" class="card-img-top">
+                  <p class="card-text">
+                      <h6 class="card-title">Nước ép Ổi</h6>
+                      <p>48.000VNĐ</p>
+                      <p>&#9733 &#9733 &#9733 &#9733</p>
+                  </p>
+                  <button href="" class="btn text-white add-cart cart1"style="background-color: #072022;"  id="btn-cart" onclick="cartplus(),addCart('Nước ép Ổi',48000,'cart17')">thêm giỏ hàng <span class="fa fa-cart-plus"></span></button>
+              </div>
+          </div>
+      </div>
+      <div class="col-3">
+          <div class="card">
+              <div class="card-body">
+                  <img src="../IMAGE/NuocUong/Strongbow.jpg" alt="" class="card-img-top">
+                  <p class="card-text">
+                      <h6 class="card-title"> Strongbow </h6>
+                      <p>60.000VNĐ</p>
+                      <p>&#9733 &#9733 &#9733 &#9733</p>
+                  </p>
+                  <button href="" class="btn text-white add-cart cart2"style="background-color: #072022;" id="btn-cart" onclick="cartplus(),addCart('Strongbow ',60000,'cart18')">thêm giỏ hàng <span class="fa fa-cart-plus"></span></button>
+              </div>
+          </div>
+      </div>
+      </div>
+      
+      <ul class="pagination pagination-sm justify-content-center pt-5">
+        <li class="page-item"><a class="page-link" href="../HTML/ThucDon_MonKhac_BS.html" style="color: #072022;"><b>-</b></a></li>
+        <li class="page-item"><a class="page-link" href="../HTML/ThucDon_Lau_BS.html"  style="color: #072022;" ><b>1</b></a></li>
+        <li class="page-item"><a class="page-link" href="../HTML/ThucDon_MonKhac_BS.html"  style="color: #072022;"><b>2</b></a></li>
+        <li class="page-item"><a class="page-link active" href="#"  style="color: #072022;"><b>3</b></a></li>
+        <li class="page-item"><a class="page-link" href="../HTML/ThucDon_Nuong_BS.html"  style="color: #072022;"><b>4</b></a></li>
+        <li class="page-item"><a class="page-link" href="../HTML/ThucDon_Nuong_BS.html">+</a></li>
+      </ul>
+
+      <div class="footer pt-5">
+        <div class="footer text-white pt-5 pb-4" style="background-color: #072022">
+            <div class="container">
+              <div class="row text-start">
+                <div class="col-md-3 ms-5">
+                  <h4 class="text">SEA FOOD</h4>
+                  <p>
+                    <i class="fa fa-home"></i>
+                    <span><i> Mở cửa 06:30 - 22:00 giờ mỗi ngày</i></span><br />
+                    <i class="fa fa-map-marker"></i>
+                    <span><i> 12 Nguyễn Văn Bảo, P.4, Quận Gò Vấp, TP.HCM</i></span><br />
+                    <i class="fa fa-phone"></i>
+                    <span><i> +84 245 4483</i></span><br />
+                    <i class="fa fa-envelope"></i
+                    ><span><i> <a href = "mailto: seafood@gmail.com">seafood@gmail.com</a></i></span><br />
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                  </p>
+                </div>
+      
+                <div class="col-md-3 ms-5">
+                  <h4 class="text">MÓN NGON MỖI NGÀY</h4>
+                  <ul class="list-group">
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="GỎI NGÓ SEN TÔM MỰC"
+                        >GỎI NGÓ SEN TÔM MỰC</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="SALAD CÁ NGỪ"
+                        >SALAD CÁ NGỪ</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="SOUP HẢI SẢN TUYẾT YẾN"
+                        >SOUP HẢI SẢN TUYẾT YẾN</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="HÀU NƯỚNG MUỐI ỚT"
+                        >HÀU NƯỚNG MUỐI ỚT</a>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="col-md-3 ms-5">
+                  <h4 class="text">LIÊN KẾT NHANH</h4>
+                  <ul class="list-group ">
+                    <li class="list-inline-item">
+                      <a href="../HTML/Trangchu.html" class="text-white" style="text-decoration: none" title="Trang chủ"
+                        >Trang chủ</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="Giới thiệu"
+                        >Giới thiệu</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="Đặt bàn"
+                        >Đặt bàn</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="Giỏ hàng"
+                        >Giỏ hàng</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="" class="text-white" style="text-decoration: none" title="Thực đơn"
+                        >Thực đơn</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <div class="row text-lg-center">
+                  <div class="col-sm-12 col-xs-12">
+                      <b><p>&copy; 2023 -<span>&nbsp;Seafood</span></p></b>
+                      <p>Nhóm phát triển: nhóm 15</p>
+                      <p><i>Thành viên: Đào Hoa Anh Thư, Đỗ Nguyễn Quỳnh Hương, Trần Thu Huyền, Trần Cao Kiệt, Nguyễn Thanh Thùy Trang</i> </p>
+                  </div>
+              </div>
+            </div>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Đóng"></button>
+                </div>
+                <div class="main">
+                    <div class="form signin">
+                        <div class="title">
+                            <h1>Đăng nhập account của bạn</h1>
+                        </div>
+                        <fieldset>
+                            <form class="formsig">
+                                <div class="form-group">
+                                    <label for="emailInput">Địa chỉ email</label>
+                                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
+                                        placeholder="Nhập địa chỉ email của bạn">
+                                    <span id="tb_email" style="color: red;"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="passwordInput">Mật khẩu</label>
+                                    <input type="password" class="form-control" id="passwordInput"
+                                        placeholder="Nhập mật khẩu của bạn">
+                                    <span id="tb_passDN" style="color: red;"></span>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberCheck">
+                                    <label class="form-check-label" for="rememberCheck">Ghi nhớ tài khoản của tôi</label>
+                                </div>
+                                <span id="tb_To_bu1" style="color: red;"></span>
+                                <button type="button" class="btn btn-primary" id="SigninAccount">Đăng nhập</button>
+                            </form>
+                        </fieldset>
+                        <p>Chưa có tài khoản ? 
+                            <a href="../HTML/DangKy.html">Tạo tài khoản</a>
+                        </p>
+                    </div>
+                    <div class="form signup">
+                        <div class="title">
+                            <h1>Tạo tài khoản của bạn</h1>
+                        </div>
+                        <fieldset>
+                            <form class="formsig">
+                                <div class="form-group">
+                                    <label for="reemailInput">Địa chỉ email</label>
+                                    <input required="required" type="email" class="form-control" id="reemailInput"
+                                        aria-describedby="emailHelp" placeholder="Nhập địa chỉ email của bạn">
+                                    <span id="tb_Email_DK" style="color: red;"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="repasswordInput">Mật khẩu</label>
+                                    <input required="required" type="password" class="form-control" id="repasswordInput"
+                                        placeholder="Nhập mật khẩu của bạn">
+                                    <span id="tb_passDK" style="color: red;"></span>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="repassword">Xác nhận mật khẩu</label>
+                                    <input required="required" type="password" class="form-control" id="repassword"
+                                        placeholder="Xác nhận mật khẩu">
+                                    <span id="tb_repassDK" style="color: red;"></span>
+                                        
+                                </div>
+                                <div class="form-group">
+                                    <label for="fnameInput">Nhập họ tên</label>
+                                    <input required="required" type="text" class="form-control" id="fnameInput"
+                                        placeholder="Họ và tên">
+                                        <span id="tb_HoTen" style="color: red;"></span>
+                                </div>
+                                <button id="dangki-btn" type="button" class="btn btn-primary">Đăng kí</button>
+                            </form>
+                        </fieldset>
+                        <p>Đã có tài khoản ? <a href="#" class="login">Đăng nhập</a></p>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+<script>
+  let login =document.querySelector('.login')
+  let create =document.querySelector('.create')
+  let main =document.querySelector('.main')
+
+
+  function KTDN(){
+      var rgc = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if(rgc.test($("#emailInput").val()) == true ) {
+          $("#tb_email").html("Email hợp lệ");                
+          // Lấy thông tin người dùng từ localStorage
+          var users = JSON.parse(localStorage.getItem('users') || '[]');
+          var email = $("#emailInput").val();
+          var password = $("#passwordInput").val();
+
+          // Kiểm tra thông tin đăng nhập
+          var isUserExist = users.some(function(user) {
+              return user.email === email
+          });
+
+          if (isUserExist) {                    
+              return true;
+          } else {
+              alert('Email chưa được cấp tài khoản');
+              $("#tb_email").html("Email hợp lệ nhưng chưa được cấp tài khoản");
+              return false;
+          }
+          
+      } else {
+          $("#tb_email").html("Email không hợp lệ");          
+          return false;
+      }
+  }
+
+  $("#emailInput").blur(KTDN);
+
+  function KTMK(){
+          var rgc = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{10,20}$/;
+          if(  rgc.test($("#passwordInput").val()) == true ) {
+              $("#tb_passDN").html("Mật khẩu hợp lệ");  
+              return true;
+          } else {
+              $("#tb_passDN").html("Mật khẩu bao gồm chữ thường, chữ in và ký tự đặc biệt ");          
+              return false;
+          }
+  }
+  $("#passwordInput").blur(KTMK);
+  
+  $("#SigninAccount").click(function(){           
+      if ( !KTDN() || !KTMK() ){
+          $("#tb_To_bu1").html("Mời bạn nhập đúng và đủ thông tin")
+      }else {
+          $("#tb_To_bu1").html("");     
+      }
+      var mail = $("#emailInput").val();
+      var them = " Xin chào " + mail;
+      $("header h6").append(them);
+      $("#loginModal").modal("hide");
+      return true;
+  })
+
+  $("#dangki-btn").click(function(){
+      $("#loginModal").modal("hide");
+  })
+</script>
+<script>
+    $(document).ready(function() {
+        var information = JSON.parse(localStorage.getItem('users'));
+        var thongtin = information[0];
+        document.getElementById("user").innerHTML = thongtin.name;
+  
+    });
+  </script>

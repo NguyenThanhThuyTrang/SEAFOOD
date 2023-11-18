@@ -1,0 +1,25 @@
+header{
+    background-color: #072022;;
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+    color: aliceblue;
+}
+h1{
+    padding-right: 40px;
+}
+.col-2{
+    text-align:left  ;
+    padding-top: 15px;
+}
+.container-fluid{
+    padding-top: 30px;
+}
+#div1{
+    padding-bottom: 10px;
+    text-align: center;
+}
+.delete-button:hover{
+    color: red;
+}
+
