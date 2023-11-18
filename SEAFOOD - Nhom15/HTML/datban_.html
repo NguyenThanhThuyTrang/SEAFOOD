@@ -367,6 +367,155 @@
   </div>
 </div>
 
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Đóng"></button>
+                </div>
+                <div class="main">
+                    <div class="form signin">
+                        <div class="title">
+                            <h1>Đăng nhập account của bạn</h1>
+                        </div>
+                        <fieldset>
+                            <form class="formsig">
+                                <div class="form-group">
+                                    <label for="emailInput">Địa chỉ email</label>
+                                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
+                                        placeholder="Nhập địa chỉ email của bạn">
+                                    <span id="tb_email" style="color: red;"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="passwordInput">Mật khẩu</label>
+                                    <input type="password" class="form-control" id="passwordInput"
+                                        placeholder="Nhập mật khẩu của bạn">
+                                    <span id="tb_passDN" style="color: red;"></span>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberCheck">
+                                    <label class="form-check-label" for="rememberCheck">Ghi nhớ tài khoản của tôi</label>
+                                </div>
+                                <span id="tb_To_bu1" style="color: red;"></span>
+                                <button type="button" class="btn btn-primary" id="SigninAccount">Đăng nhập</button>
+                            </form>
+                        </fieldset>
+                        <p>Chưa có tài khoản ? 
+                            <a href="../HTML/DangKy.html">Tạo tài khoản</a>
+                        </p>
+                    </div>
+                    <div class="form signup">
+                        <div class="title">
+                            <h1>Tạo tài khoản của bạn</h1>
+                        </div>
+                        <fieldset>
+                            <form class="formsig">
+                                <div class="form-group">
+                                    <label for="reemailInput">Địa chỉ email</label>
+                                    <input required="required" type="email" class="form-control" id="reemailInput"
+                                        aria-describedby="emailHelp" placeholder="Nhập địa chỉ email của bạn">
+                                    <span id="tb_Email_DK" style="color: red;"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="repasswordInput">Mật khẩu</label>
+                                    <input required="required" type="password" class="form-control" id="repasswordInput"
+                                        placeholder="Nhập mật khẩu của bạn">
+                                    <span id="tb_passDK" style="color: red;"></span>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="repassword">Xác nhận mật khẩu</label>
+                                    <input required="required" type="password" class="form-control" id="repassword"
+                                        placeholder="Xác nhận mật khẩu">
+                                    <span id="tb_repassDK" style="color: red;"></span>
+                                        
+                                </div>
+                                <div class="form-group">
+                                    <label for="fnameInput">Nhập họ tên</label>
+                                    <input required="required" type="text" class="form-control" id="fnameInput"
+                                        placeholder="Họ và tên">
+                                        <span id="tb_HoTen" style="color: red;"></span>
+                                </div>
+                                <button id="dangki-btn" type="button" class="btn btn-primary">Đăng kí</button>
+                            </form>
+                        </fieldset>
+                        <p>Đã có tài khoản ? <a href="#" class="login">Đăng nhập</a></p>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      let login =document.querySelector('.login')
+      let create =document.querySelector('.create')
+      let main =document.querySelector('.main')
+    
+    
+      function KTDN(){
+          var rgc = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if(rgc.test($("#emailInput").val()) == true ) {
+              $("#tb_email").html("Email hợp lệ");                
+              // Lấy thông tin người dùng từ localStorage
+              var users = JSON.parse(localStorage.getItem('users') || '[]');
+              var email = $("#emailInput").val();
+              var password = $("#passwordInput").val();
+    
+              // Kiểm tra thông tin đăng nhập
+              var isUserExist = users.some(function(user) {
+                  return user.email === email
+              });
+    
+              if (isUserExist) {                    
+                  return true;
+              } else {
+                  alert('Email chưa được cấp tài khoản');
+                  $("#tb_email").html("Email hợp lệ nhưng chưa được cấp tài khoản");
+                  return false;
+              }
+              
+          } else {
+              $("#tb_email").html("Email không hợp lệ");          
+              return false;
+          }
+      }
+    
+      $("#emailInput").blur(KTDN);
+    
+      function KTMK(){
+              var rgc = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{10,20}$/;
+              if(  rgc.test($("#passwordInput").val()) == true ) {
+                  $("#tb_passDN").html("Mật khẩu hợp lệ");  
+                  return true;
+              } else {
+                  $("#tb_passDN").html("Mật khẩu bao gồm chữ thường, chữ in và ký tự đặc biệt ");          
+                  return false;
+              }
+      }
+      $("#passwordInput").blur(KTMK);
+      
+      $("#SigninAccount").click(function(){           
+          if ( !KTDN() || !KTMK() ){
+              $("#tb_To_bu1").html("Mời bạn nhập đúng và đủ thông tin")
+          }else {
+              $("#tb_To_bu1").html("");     
+          }
+          var mail = $("#emailInput").val();
+          var them = " Xin chào " + mail;
+          $("header h6").append(them);
+          $("#loginModal").modal("hide");
+          return true;
+      })
+    
+      $("#dangki-btn").click(function(){
+          $("#loginModal").modal("hide");
+      })
+    </script>
 <script>
   function KiemtraHoTen() {
       var rgc= /^[A-Za-za-zA-Z\s|À|Á|Â|Ã|È|É|Ê|Ì|Í|Ò|Ó|Ô|Õ|Ù|Ú|Ă|Đ|Ĩ|Ũ|Ơ|à|á|â|ã|è|é|ê|ì|í|ò|ó|ô|õ|ù|ú|ă|đ|ĩ|ũ|ơ|Ư|Ă|Ạ|Ả|Ấ|Ầ|Ẩ|Ẫ|Ậ|Ắ|Ằ|Ẳ|Ẵ|Ặ|Ẹ|Ẻ|Ẽ|Ề|Ề|Ể|Ế|ư|ă|ạ|ả|ấ|ầ|ẩ|ẫ|ậ|ắ|ằ|ẳ|ẵ|ặ|ẹ|ẻ|ẽ|ề|ề|ể|ế|Ễ|Ệ|Ỉ|Ị|Ọ|Ỏ|Ố|Ồ|Ổ|Ỗ|Ộ|Ớ|Ờ|Ở|Ỡ|Ợ|Ụ|Ủ|Ứ|Ừ|ễ|ệ|ỉ|ị|ọ|ỏ|ố|ồ|ổ|ỗ|ộ|ớ|ờ|ở|ỡ|ợ|ụ|ủ|ứ|ừ|Ử|Ữ|Ự|Ỳ|Ỵ|Ý|Ỷ|Ỹ|ử|ữ|ự|ỳ|ỵ|ỷ|ỹ|]+$/;
